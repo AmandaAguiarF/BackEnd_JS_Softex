@@ -1,3 +1,3 @@
-interface Sanduiche {
+export interface Sanduiche {
   custo(): number;
 }

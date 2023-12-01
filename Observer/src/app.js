@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Cliente_1 = require("./model/Cliente");
+var Loja_1 = require("./model/Loja");
+var Observer_1 = require("./model/Observer");
+var joao = new Cliente_1.Cliente("João Victor", "jm@softex.com.br");
+var rodrigo = new Cliente_1.Cliente("Rodrigo Duarte", "rds@softex.com.br");
+var thiago = new Cliente_1.Cliente("Thiago Jomar", "tjf@softex.com.br");
+var nadjaImports = new Loja_1.Loja("Nadja Imports", "Muamba");
+Observer_1.Observer.addCliente(joao);
+Observer_1.Observer.addCliente(rodrigo);
+Observer_1.Observer.addCliente(thiago);
+nadjaImports.publicarNovoProduto("Iphone 15 Pro Max 512gb - R$15.000,00");
+nadjaImports.publicarNovoProduto("Iphone 15 512gb - R$10.000,00");

@@ -1,5 +1,5 @@
-
-export abstract class DecoradorDeIngredientes implements Sanduiche {
+import { Sanduiche } from "./sanduiche";
+export abstract class IngredientesDecorator implements Sanduiche {
   constructor(protected sanduiche: Sanduiche) {}
 
   abstract custo(): number;
